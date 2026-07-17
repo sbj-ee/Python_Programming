@@ -137,21 +137,6 @@ The 33 exercises form five progressive tiers.
 | 32 | I/O Multiplexing | `selectors`, non-blocking sockets, a multi-client echo server |
 | 33 | Regex | `re` — `match`/`search`/`findall`, groups, compiled patterns |
 
-## Key Differences from C_Programming / CPP_Programming
-
-The C and C++ projects cover overlapping systems topics. Here is what changes
-in Python:
-
-| Concern | C / C++ | Python |
-|---------|---------|--------|
-| Compilation | `gcc`/`g++` to a binary | Interpreted (compiled to bytecode at import) |
-| Typing | Static, checked at compile time | Dynamic; optional static hints checked by `mypy` |
-| Memory | Manual (`malloc`/`free`) or RAII | Reference counting + cycle-detecting garbage collector |
-| Generics | `void *`/macros or templates | Duck typing; `typing.Generic`/`TypeVar` for hints only |
-| Concurrency | OS threads, true parallelism | GIL limits CPU-bound threads; `multiprocessing` or `asyncio` for real concurrency |
-| Error handling | Return codes / exceptions | Exceptions are the primary and idiomatic mechanism |
-| Build system | `make`/`Makefile` | None — scripts run directly; `pyproject.toml` for dependencies |
-
 ## Every File Has
 
 - A single `.py` source file (or small package) with clearly commented sections

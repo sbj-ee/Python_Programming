@@ -134,16 +134,4 @@ select = ["E", "F", "W", "I", "UP", "B"]
 | `ruff` | Linting + import sorting + pyupgrade-style modernization, in one fast tool |
 | `mypy` | Static type checking against the hints used throughout, especially exercise 20 |
 
-## Key Differences from C_Programming / CPP_Programming
-
-| Concern | C / C++ | Python |
-|---------|---------|--------|
-| Compilation | `gcc`/`g++` to a binary | Interpreted (compiled to bytecode at import) |
-| Typing | Static, checked at compile time | Dynamic; optional static hints checked by `mypy` |
-| Memory | Manual (`malloc`/`free`) or RAII | Reference counting + cycle-detecting garbage collector |
-| Generics | `void *`/macros or templates | Duck typing; `typing.Generic`/`TypeVar` for hints only |
-| Concurrency | OS threads, true parallelism | GIL limits CPU-bound threads; `multiprocessing` or `asyncio` for real concurrency |
-| Error handling | Return codes / exceptions | Exceptions are the primary and idiomatic mechanism |
-| Build system | `make`/`Makefile` | None — scripts run directly; `pyproject.toml` for dependencies |
-
 See `Introduction.md` for the full exercise-by-exercise progression and tier breakdown.
